@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7FA53C2D-D765-4267-9214-DFEECED1E4BA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>project</RootNamespace>
+    <AssemblyName>project</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Buffalo_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Buffalo_details.Designer.cs">
+      <DependentUpon>Buffalo_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Crystal_Report\Owener.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Owener.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Crystal_Report\Personal_Details.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Personal_Details.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Data_Sets\Owener_DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Owener_DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Data_Sets\Personal_Report.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Personal_Report.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Cattle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Cattle.Designer.cs">
+      <DependentUpon>frm_Cattle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_cat_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_cat_details.Designer.cs">
+      <DependentUpon>frm_cat_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_District_Dashbord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_District_Dashbord.Designer.cs">
+      <DependentUpon>Frm_District_Dashbord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_dog_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_dog_details.Designer.cs">
+      <DependentUpon>frm_dog_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_duck_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_duck_details.Designer.cs">
+      <DependentUpon>frm_duck_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_equipments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_equipments.Designer.cs">
+      <DependentUpon>frm_equipments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Goat_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Goat_Details.Designer.cs">
+      <DependentUpon>frm_Goat_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_horse_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_horse_details.Designer.cs">
+      <DependentUpon>frm_horse_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Log_In.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Log_In.Designer.cs">
+      <DependentUpon>Frm_Log_In.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_other_birds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_other_birds.Designer.cs">
+      <DependentUpon>frm_other_birds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Owener_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Owener_Report.Designer.cs">
+      <DependentUpon>Frm_Owener_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Personal_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Personal_Detail.Designer.cs">
+      <DependentUpon>Frm_Personal_Detail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Personal_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Personal_Details.Designer.cs">
+      <DependentUpon>frm_Personal_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Personal_Details_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Personal_Details_Report.Designer.cs">
+      <DependentUpon>Frm_Personal_Details_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Sheep_details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Sheep_details.Designer.cs">
+      <DependentUpon>frm_Sheep_details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Sign_In.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Sign_In.Designer.cs">
+      <DependentUpon>Frm_Sign_In.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_State_Dashbord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_State_Dashbord.Designer.cs">
+      <DependentUpon>Frm_State_Dashbord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Survair_Dashbord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Survair_Dashbord.Designer.cs">
+      <DependentUpon>Frm_Survair_Dashbord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Taluka_Dashbord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Taluka_Dashbord.Designer.cs">
+      <DependentUpon>Frm_Taluka_Dashbord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_village_or_city_profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_village_or_city_profile.Designer.cs">
+      <DependentUpon>frm_village_or_city_profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Class.cs" />
+    <Compile Include="Global_Vars.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="species.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="species.Designer.cs">
+      <DependentUpon>species.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Buffalo_details.resx">
+      <DependentUpon>Buffalo_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystal_Report\Owener.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Owener.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Crystal_Report\Personal_Details.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Personal_Details.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Cattle.resx">
+      <DependentUpon>frm_Cattle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_cat_details.resx">
+      <DependentUpon>frm_cat_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_District_Dashbord.resx">
+      <DependentUpon>Frm_District_Dashbord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_dog_details.resx">
+      <DependentUpon>frm_dog_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_duck_details.resx">
+      <DependentUpon>frm_duck_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_equipments.resx">
+      <DependentUpon>frm_equipments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Goat_Details.resx">
+      <DependentUpon>frm_Goat_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_horse_details.resx">
+      <DependentUpon>frm_horse_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Log_In.resx">
+      <DependentUpon>Frm_Log_In.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_other_birds.resx">
+      <DependentUpon>frm_other_birds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Owener_Report.resx">
+      <DependentUpon>Frm_Owener_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Personal_Detail.resx">
+      <DependentUpon>Frm_Personal_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Personal_Details.resx">
+      <DependentUpon>frm_Personal_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Personal_Details_Report.resx">
+      <DependentUpon>Frm_Personal_Details_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Sheep_details.resx">
+      <DependentUpon>frm_Sheep_details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Sign_In.resx">
+      <DependentUpon>Frm_Sign_In.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_State_Dashbord.resx">
+      <DependentUpon>Frm_State_Dashbord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Survair_Dashbord.resx">
+      <DependentUpon>Frm_Survair_Dashbord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Taluka_Dashbord.resx">
+      <DependentUpon>Frm_Taluka_Dashbord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_village_or_city_profile.resx">
+      <DependentUpon>frm_village_or_city_profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="species.resx">
+      <DependentUpon>species.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Data_Sets\Owener_DataSet.xsc">
+      <DependentUpon>Owener_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Data_Sets\Owener_DataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Owener_DataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data_Sets\Owener_DataSet.xss">
+      <DependentUpon>Owener_DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Data_Sets\Personal_Report.xsc">
+      <DependentUpon>Personal_Report.xsd</DependentUpon>
+    </None>
+    <None Include="Data_Sets\Personal_Report.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Personal_Report.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Data_Sets\Personal_Report.xss">
+      <DependentUpon>Personal_Report.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
